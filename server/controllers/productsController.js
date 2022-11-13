@@ -9,8 +9,7 @@ module.exports = {
     console.log('GET ALL PRODUCTS ROUTE HIT');
     const client = new MongoClient(uri, {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
-      ssl: true
+      useUnifiedTopology: true
     });
     try {
       let products = await client.db(source).collection('products').find({}).toArray();
