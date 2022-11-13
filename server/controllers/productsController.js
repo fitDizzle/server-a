@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const uri = process.env.MONGO_URI || 'attelier-service-provider:att2022!@mongodb://54.176.23.12:27017/';
+const uri = process.env.MONGO_URI || 'mongodb://attelier-service-provider:att2022!@54.176.23.12:27017/';
 const source = process.env.DATABASE || 'attelier-product-db';
 
 module.exports = {
